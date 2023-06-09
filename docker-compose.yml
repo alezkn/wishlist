@@ -1,0 +1,28 @@
+version: "3"
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./frontend/src:/frontend-app/src
+      - ./frontend/public:/frontend-app/public
+      - ./frontend/.next:/frontend-app/.next
+  backend-node:
+    build:
+      context: ./backend-node
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+    volumes:
+      - ./backend-node:/backend-node-app
+  backend-dotnet:
+    build:
+      context: ./backend-dotnet
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./backend-dotnet:/backend-dotnet-app
