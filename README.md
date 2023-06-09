@@ -18,6 +18,17 @@ Certifique-se de ter as seguintes ferramentas instaladas no seu sistema:
 
 - Node.js
 - .NET Core
+- Git
+
+### Clonando o projeto
+
+Para clonar o projeto, abra o terminal e execute o seguinte comando:
+
+```bash
+git clone https://github.com/alezkn/wishlist.git
+```
+
+Isso fará uma cópia do projeto no seu computador.
 
 ### Instruções para iniciar o Backend em .NET
 
